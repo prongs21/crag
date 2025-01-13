@@ -1,0 +1,457 @@
+#95
+x=-3.3 
+while x<=2.7:
+    x+=0.3 
+    y=abs(2*x+x**3)
+print(x,y)
+
+x=int(input("x= "))
+if x>2:
+    y=3**(x+4)
+else:
+    while x>=-5 and x<=8:
+        y=-8
+        x+=2 
+print(x,y)
+
+
+#96
+x=int(input("x= "))
+if x>2:
+    y=3**(x+4)
+else:
+    while x>=-5 and x<=8:
+        y=-8
+        x+=2 
+print(x,y)
+
+
+#99
+from math import*
+x=int(input ("x="))
+if x>3:
+    y=log(x,4)
+else:
+    while x>=-5 and x<=9:
+        y=-9
+        x+=1,5
+print(x,y)
+
+
+#100
+from math import*
+x=int(input ("x="))
+if x>5:
+    y=sin(x)
+else:
+    while x>=-30 and x<=30:
+        y=cos(x)
+        x+=3,5
+print(x,y)
+
+
+#103
+from math import*
+n=int(input("n="))
+x=0.5
+p=1
+i=5
+while i<=n:
+    x=tan(x+2)
+    p=x**2+1
+    i+=1
+    print(p)
+    
+
+#104
+from math import*
+n=int(input("n="))
+x=-4.2
+i=5
+s=0
+while i<=n:
+    x=1/tan(x)
+    s=x**2-2*x
+    i+=1
+    print(s)
+
+
+#107
+n=int(input("3*n= "))
+x=1 
+p=1 
+i=0 
+while i<=n:
+    x=x+7
+    p=x 
+    i+=1 
+    print(p)
+    
+
+#109
+from math import*
+n=int(input("n="))
+x=5
+i=1
+s=0
+while i<=n:
+    x=x**2+7
+    s=x**2
+    i+=1
+    print(s)
+    
+
+#111
+from math import*
+n=int(input("n="))
+x=1
+y=2
+i=1
+s=0
+while i<=n:
+    x=2*abs(x+3)
+    y=y**2-4
+    s=(x+y)**2
+    i+=1
+    print(s)
+    
+
+#113
+from math import*
+n=int(input("n="))
+x=2
+y=1
+i=1
+p=1
+while i<=n:
+    x=x**2-1
+    y=tan(y)
+    p=x**2+y
+    i+=1
+    print(p)
+    
+
+#120
+n=int(input("3*n= "))
+a=1 
+b=1 
+i=1 
+p=1 
+while i<=n:
+    a=sin(a)
+    b=cos(b+3)
+    p=a+b 
+    print(p)
+
+
+#121
+x = float(input("x="))
+n = int(input("n="))
+p = 0
+for i in range(1, n+1):
+    p += (x**(4*i-3)) / (4*i-3)
+print("P =", p)
+
+
+#122
+from math import cos
+# Ներմուծում
+x = float(input("x="))
+n = int(input("n="))
+# Սկզբնական արժեք
+p = 1
+# Արտահայտության հաշվարկ
+for i in range(1, n+1):
+    p *= cos((2*i-1)*x) / (2**(2*i-1))
+# Արդյունք
+print("P =", p)
+
+
+#126
+from math import*
+x=float(input("x="))
+n=int(input("n="))
+s=0
+for i in range (1,n+1):
+    s=(2*x+1)**n/(n+5)*log(x**2+1,e)
+print(s)
+
+
+#129
+from math import*
+x=float(input("x="))
+n=int(input("n="))
+s=0
+for i in range(0,n+1):
+    s=sin(3*x+2*n+2)/3**(2*n+2)
+print(s)
+
+
+#130
+from math import*
+x=float(input("x="))
+n=int(input("n="))
+s=0
+for i in range(0,n+1):
+    s=4**(n+1)*(x+1)**n/n**2+2*n+3
+print(s)
+
+
+#131
+s=0 
+for i in range(0,17):
+    if i%2==1:
+        x=i
+        y=i**2 
+    else:
+        x=i**1 
+        y=i 
+        s=(x-y)**2
+print(s)
+
+
+#132
+s=0 
+e=2.78281828
+for i in range(1,11):
+    if i%2==1 and i**2%2==1:
+        x=e**(i-4)
+        y=(tan(i))**2
+    else:
+        x=i**2-i
+        y=0 
+        s=x2-y2
+print(s)
+
+
+#134
+p=1 
+for i in range(2,19):
+    if i%2==1:
+        x=2**(i-4)
+        y=i**2+2 
+    else:
+        x=i**2+2 
+        y=i**2+2
+        p=x*y 
+print(p)
+
+
+#135
+s=0 
+for i in range(1,11):
+    if i%3==0 and i%7==0:
+        x=log(i,e)
+        y=log(i,3)
+    else:
+        x=3 
+        y=3 
+        s=x-y
+print(s)
+
+
+#141
+x=int(input("x= "))
+for k in range(1,15):
+    if x>1:
+        y=3*x**(k+1)
+    else:
+        y=5*x+k**7 
+print(y)
+
+
+#142
+x=int(input("x="))
+n=int(input("n="))
+for k in range(1,n+1):
+    if x>5:
+      y=3*log(x,3)+5*k
+    else:
+        y=4*(x+k)**8
+print(y)
+
+
+#146
+x=int(input("x= "))
+for k in range(2,19):
+    k+=1
+    if x>3 and x<7:
+        y=9*x**k
+    else:
+        y=8*x+k**3 
+print(y)
+
+
+#149
+x=int(input("x="))
+e=2.71
+for k in range(1,15):
+    k+=1
+    if x>2 and x<5:
+        y=7*e**(k+3)
+    elif x>0 and x<=2:
+        y=8*x*k**5
+    else:
+        y=7
+print(y)
+
+
+#150
+x=int(input("x= "))
+for k in range(2,11):
+    k+=1 
+    if x>3 and x<5:
+        y=x**(k+6)
+    elif x<=3:
+        y=x+k**4 
+    else:
+        y=5**6 
+print(y)
+
+
+#221
+list=[1,-2,3,-4,5,-6,7,-8,9]
+s=0 #գումար
+q=0 #քանակ
+for item in list:
+    if item>0:
+        s+=item
+        q+=1
+print(s/q)
+
+
+#248
+list=[1,3,6,8,3,-1]
+s=0 
+q=0 
+for item in list:
+    if item%3==0:
+        s+=item
+        q+=1
+print(s/q)
+
+
+#251
+k=int(input("k= "))
+list=[7,8,14,49,0]
+q=0
+s=0
+for item in list:
+    if item%k==0:
+        s+=item
+        q+=1
+print(s)
+
+
+#255
+list=[1,3,6,8,3,-1]
+s=0
+for index in list:
+  for item in list:
+    if (item+index)%3==0:
+        s+=item**2 
+print(s)
+
+
+# 264
+list=[2,3,5,4,8,8,7,4,6,8]
+max=list[0]
+min=list[0]
+for item in list:
+    if item<min:
+        min=item
+    if item>max:
+        max=item
+print(max+min)
+
+
+# 265
+from math import*
+list=[2,3,5,4,8,8,7,4,6,8]
+min=list[0]
+ind=0
+for i in range(len(list)):
+    if list[i]<min:
+        min=list[i]
+        ind=i
+print(ind+min)
+
+
+#291 
+list_x=[-1,2,-3,4,5,-8,0,9]
+list_y=[]
+for item in list_x:
+    if item>0:
+        list_y.append(item)
+print(list_y)
+
+
+#292
+list_x=[-1,2,-3,4,5,-8,0,9]
+list_y=[]
+for item in list_x:
+    if item>0 or item<0:
+        list_y.append(item)
+print(list_y)
+
+
+#293
+list_x=[-1,2,-3,4,5,-8,0,9]
+list_y=[]
+for item in list_x:
+    if item%2==1:
+        list_y.append(item)
+print(list_y)
+
+
+#294
+a=float(input("a= "))
+b=int(input("b= "))
+list_x=[-1,2,-3,4,5,-8,0,9]
+list_y=[]
+for item in list_x:
+    if item>=a and item<=b: 
+        list_y.append(item)
+print(list_y)
+
+
+#299
+c=float(input("c= "))
+d=int(input("d= "))
+list_x=[-1,2,2,4,5,-8,0,9]
+list_y=[]
+for item in list_x:
+    if item2>c and item2<d:
+        list_y.append(item)
+print(list_y)
+
+
+#301
+list_x=[-1,2,2,4,5,-8,0,9]
+list_y=[]
+for item in list_x:
+    if item<0:
+        list_y.append(item)
+print(list_y)
+
+
+#302
+list_x=[1,3,4,5,6,6,7,14]
+list_y=[]
+for item in list_x:
+    if item%7==1:
+        list_y.append(item)
+print(list_y)
+
+
+#303
+a=float(input("a= "))
+b=int(input("b= "))
+list_x=[1,3,4,5,6,6,7,14]
+list_y=[]
+for item in list_x:
+    if item<=a and item>=b:
+        list_y.append(item)
+print(list_y)
+
+
