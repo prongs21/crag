@@ -5,14 +5,6 @@ while x<=2.7:
     y=abs(2*x+x**3)
 print(x,y)
 
-x=int(input("x= "))
-if x>2:
-    y=3**(x+4)
-else:
-    while x>=-5 and x<=8:
-        y=-8
-        x+=2 
-print(x,y)
 
 
 #96
