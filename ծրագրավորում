@@ -442,4 +442,34 @@ for item in list_x:
         list_y.append(item)
 print(list_y)
 
+#428
+from random import randint 
+n=int(input("n="))
+q=0
+matrix=[]
+for i in range(n):
+    row=[]
+    for j in range(n):
+        a=randint(-15,15)
+        row.append(a)
+        if i>j and a>0 and j%2==0:
+            q+=1
+    matrix.append(a)
+    print(row)
+print(q)
 
+#429
+from random import randint
+n=int(input("n"))
+p=1
+matrix=[]
+for i in range(n):
+    row=[]
+    for j in range(n):
+        a=randint(-10,10)
+        row.append(a)
+        if i<j and (i+j)%2==1:
+            p*=a
+    matrix.append(a)
+    print(row)
+print(p)
