@@ -59,7 +59,7 @@ while i<=n:
 from math import*
 n=int(input("n="))
 x=-4.2
-i=5
+i=0
 s=0
 while i<=n:
     x=1/tan(x)
